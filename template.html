@@ -11,16 +11,23 @@
 
 <body>
     <div class="container">
+        <div class="flex-row mb-3 items-center">
+            <div>
+                <h2 class="tag">DataViz Cheatsheet</h2>
+            </div>
+            <div>
+                <h1 class="">The 7 Easiest To Make Visuals To Use In A Winning Presentation</h1>
+                <p>by Martin Pellizzer
+                </p>
+            </div>
+        </div>
         <div class="row">
 
             <div class="col">
                 <div class="card">
                     <h2 class="card-header">Text</h2>
                     <div class="card-section">
-                        <p>Usage:</p>
-                        <ul>
-                            <li>Use it when you have no more than 1 or 2 numbers to display</li>
-                        </ul>
+                        <p>Use it when you have no more than 1 or 2 numbers to display</p>
                     </div>
                     <div class="card-section">
                         <p>Tips:</p>
@@ -30,7 +37,6 @@
                         </ul>
                     </div>
                     <div class="card-section">
-                        <p>Example:</p>
                         <div class="text-example">
                             <p class="text-example-number">99%</p>
                             <p class="text-example-text">Patogen Reduction<br>With New Treatment</p>
@@ -41,12 +47,8 @@
                 <div class="card">
                     <h2 class="card-header">Table</h2>
                     <div class="card-section">
-                        <p>Usage:</p>
-                        <ul>
-                            <li>Use it when you have a lot of data to compare, index, and with different units of
-                                measure.
-                            </li>
-                        </ul>
+                        <p>Use it when you have a lot of data to compare, index, and with different units of
+                            measure.</p>
                     </div>
                     <div class="card-section">
                         <p>Tips:</p>
@@ -57,7 +59,6 @@
                         </ul>
                     </div>
                     <div class="card-section">
-                        <p>Example:</p>
                         <table>
                             <thead>
                                 <tr>
@@ -86,7 +87,7 @@
                                     <td>AZ</td>
                                     <td>7,276,000</td>
                                 </tr>
-                                <tr>
+                                <!-- <tr>
                                     <td>3</td>
                                     <td>Arkansas</td>
                                     <td>AR</td>
@@ -97,7 +98,7 @@
                                     <td>California</td>
                                     <td>CA</td>
                                     <td>39,240,000</td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>
@@ -108,22 +109,17 @@
                 <div class="card">
                     <h2 class="card-header">Heatmap</h2>
                     <div class="card-section">
-                        <p>Usage:</p>
-                        <ul>
-                            <li>Use it when you have to show a lot of numbers and convey their relative magnitude</li>
-                        </ul>
+                        <p>Use it when you have to show a lot of numbers and convey their relative magnitude</p>
                     </div>
                     <div class="card-section">
                         <p>Tips:</p>
                         <ul>
                             <li>Use color saturation to convey magnitude</li>
                             <li>The higher the number, the higher the color saturation</li>
-                            <li>Use only one color when it's possible</li>
                             <li>Very useful to quickly find points of interest</li>
                         </ul>
                     </div>
                     <div class="card-section">
-                        <p>Example:</p>
                         <table>
                             <thead>
                                 <tr>
@@ -160,28 +156,69 @@
                 <div class="card">
                     <h2 class="card-header">Scatter Plot</h2>
                     <div class="card-section">
-                        <p>Usage:</p>
+                        <p>Use it when you have to show relationships between two things</p>
+                    </div>
+                    <div class="card-section">
+                        <p>Tips:</p>
                         <ul>
-                            <li>Use it when you have no more than 1 or 2 numbers to display</li>
+                            <li>Mostly used in scientific fields</li>
+                            <li>They seem intimidating if you're not used to it</li>
+                            <li>Less frequently used in the business world</li>
                         </ul>
+                    </div>
+                    <div class="card-section">
+                        <!-- <img src="C:\Users\admin\dev\cheatsheet_html_pdf\scatter-default.png" alt="" width="236"> -->
+                        <img src="scatter-default.png" alt="" width="236">
                     </div>
                 </div>
             </div>
 
             <div class="col">
                 <div class="card">
-                    <h2 class="card-header">Bar Chart</h2>
+                    <h2 class="card-header">Line Chart</h2>
                     <div class="card-section">
-                        <p>Usage:</p>
+                        <p>Use it when you have relationships between point data (like values over time)</p>
+                    </div>
+                    <div class="card-section">
+                        <p>Tips:</p>
                         <ul>
-                            <li>Use it when you have no more than 1 or 2 numbers to display</li>
+                            <li>You can plot single or multiple series of data</li>
+                            <li>If you plot over time, the time axis must be in constant intervalls</li>
+                            <li>You can use it to summarize statistics (like average)</li>
                         </ul>
                     </div>
                 </div>
-            </div>
+                <div class="card">
+                    <h2 class="card-header">Bar Chart</h2>
+                    <div class="card-section">
+                        <p>Use it when you have categorical data to plot (like groups)</p>
+                    </div>
+                    <div class="card-section">
+                        <p>Tips:</p>
+                        <ul>
+                            <li>They are very common and easy to understand</li>
+                            <li>It's easy to compare between categories</li>
+                            <li>Always have a zero baseline, or they can get misleading</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-header">Area Chart</h2>
+                    <div class="card-section">
+                        <p>Use it when you have to visualize numbers of vastly differen magnitudes</p>
+                    </div>
+                    <div class="card-section">
+                        <p>Tips:</p>
+                        <ul>
+                            <li>You can create more compact visualizations than bar charts</li>
+                            <li>Beware that people are not good with two-dimentional space</li>
+                            <li>These charts can be tricky to do correctly, use them as last resort</li>
+                        </ul>
+                    </div>
+                </div>
 
+            </div>
         </div>
-    </div>
 </body>
 
 </html>

@@ -17,4 +17,10 @@ template = template_env.get_template('template.html')
 output_text = template.render(context)
 
 config = pdfkit.configuration(wkhtmltopdf='C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe')
-pdfkit.from_string(output_text, 'output.pdf', configuration=config, css='style.css')
+pdfkit.from_string(
+    output_text, 
+    'output.pdf', 
+    configuration=config, 
+    css='style.css',
+    options={"enable-local-file-access": ""},
+)
